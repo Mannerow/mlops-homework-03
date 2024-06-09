@@ -15,4 +15,20 @@ services:
       - 6789:6789
     volumes:
       - .:/home/src/
+    networks:
+      - app-network
     restart: on-failure:5
+  mlflow:
+    build:
+      context: .
+      dockerfile: mlflow.dockerfile
+    ports:
+      - "5000:5000"
+    volumes:
+      - "${PWD}/mlflow:/home/mlflow/"
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
