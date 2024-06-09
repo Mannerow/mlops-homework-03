@@ -1,6 +1,6 @@
 ## 🤔 What is it?
 
-This project walks through the homework for Module 3 in DataTalk's MLOps Zoomcamp. The project can be started by running: 'docker compose up', which will start Mage on port 6789 and MLflow on port 5000. Mage is used to build a pipeline that ingests and transforms NYC taxi data, trains a linear regression model with sklearn, then logs the model and the artifact (dict vectorizer) and registers the model with MLFlow. 
+This project walks through the homework for Module 3 in DataTalk's MLOps Zoomcamp. The project can be started by running: 'docker compose up', which starts Mage on port 6789 and MLflow on port 5000. Mage is used to build a pipeline that ingests and transforms NYC taxi data, trains a linear regression model with sklearn, logs the model and the artifact (dict vectorizer), and then registers the model with MLFlow. 
 
 ## Homework-03
 
