@@ -36,3 +36,8 @@ def export_data(data, *args, **kwargs):
 
         # Log the file as an artifact in MLflow
         mlflow.log_artifact(dv_path, "model_artifacts")  # Log the file under the "model_artifacts" folder
+
+        #Register the model:
+        run_id = mlflow.active_run().info.run_id
+        model_uri = f"runs:/{run_id}/linear_regression_model"
+        mlflow.register_model(model_uri, "LinearRegressionModel")

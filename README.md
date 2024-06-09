@@ -1,12 +1,6 @@
 ## 🤔 What is it?
 
-This is a Docker Compose template for getting started with a new Mage project.
-
-## 🙋‍♂️ Why did you create it?
-
-We created this template for users to have an easy way to deploy a project using Docker.
-
-Using Docker Compose allows editors to easily add their own images or modify the Mage image to their liking. 
+This project walks through the homework for Module 3 in DataTalk's MLOps Zoomcamp. The project can be started by running: 'docker compose up', which will start Mage on port 6789 and MLflow on port 5000. Mage is used to build a pipeline that ingests and transforms NYC taxi data, trains a linear regression model with sklearn, then logs the model and the artifact (dict vectorizer) and registers the model with MLFlow. 
 
 ## Homework-03
 
